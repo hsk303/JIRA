@@ -1,0 +1,256 @@
+*{
+    box-sizing: border-box;
+}
+div{
+    border: 1px solid;
+}
+body{
+     margin:0;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+}
+.navbar{
+    height: 12%;
+    background-color: #333333;
+    display: flex;
+}
+.grid{
+    min-height: 88%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    padding: 1.5rem;
+    background-color: #f2f2f2;
+}
+.filter-container,.action-container{
+    height: 75%;
+    width: 10rem;
+    background-color: red;
+    margin-left: 10rem
+    
+
+}
+.filter-container{
+    width: 12rem;
+    display: flex;
+    border: none !important;
+    
+}
+.action-container{
+    width: 6rem;
+    display:flex;
+    border: none !important;
+}
+.filter-container,.action-container{
+    height: 75%;
+    border-radius: 2px;
+    margin-left: 3.5rem;
+    background-color: #444444;
+    margin-top:1.5vh;
+    
+
+}
+.filter{
+    height: 100%;
+    width: 25%;
+    border: none !important;
+}
+.filter:hover{
+    background-color: #393939;
+}
+.filter div{
+    margin: auto;
+    margin-top:2.25vh;
+    height: 50%;
+    width: 50%;
+    border-radius: 2px;
+   
+   
+}
+.pink-color-btn,.pink{
+    background-color: #d595aa;
+}
+.blue-color-btn,.blue{
+    background-color: #5ecdde;
+}
+.green-color-btn,.green{
+    background-color: #91e6c7;
+}
+.black-color-btn,.black{
+    background-color: #000000;
+}
+.add,.delete{
+    text-align:center;
+    font-family:Arial, Helvetica, sans-serif;
+    width: 50%;
+    height:100%;
+    color:white;
+}
+.add{
+    font-size:2.2rem;
+    padding:.1rem;
+    border: none !important;
+}
+.delete{
+    font-size:2rem;
+    border: none !important;
+}
+.add:hover,.delete:hover{
+    background-color: #393939;
+}
+.delete-state,.selected-filter{
+    background-color: #393939 !important;
+}
+.modal-container{
+    height:18rem;
+    width:35rem;
+    border: none !important;
+    display: flex;
+    position: fixed;
+    top: calc((100vh - 18rem) / 2);
+    left: calc((100vw - 35rem) / 2);
+    box-shadow: 0px 5px 10px 0px #000000 ;
+}
+    
+
+.writting-area{
+    height:100%;
+    width:70%;
+    border: none !important;
+    background-color: white;
+    padding: 2rem;
+    outline:none;
+    font-size:1.8rem;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.filter-area{
+    height:100%;
+    width:30%;
+    background-color: #444444;
+    border: none !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.modal-filter{
+   height: 2.5rem;
+   width:50%;
+   margin-bottom: 5px;
+   opacity: 0.7;
+}
+.modal-filter:hover{
+    opacity:1; 
+} 
+/* .ticket{
+    height: 8rem;
+    width: 15rem;
+    background-color: white;
+}
+.ticket-color{
+    height:5%;
+    width:100%;
+    background-color: red;
+    border: none !important;
+}
+.ticket-id{
+    height:5%;
+    width:100%;
+    padding-left:10rem;
+    padding-top: 5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    /* font-weight:bold;
+    color:#989393;
+    border: none !important; */
+/* 
+}
+.ticket-box{
+    height:90%;
+    width:100%;
+    outline:none;
+    border: none !important;
+} */ 
+.ticket{
+    background-color:white;
+    height: 8rem;
+    width: 15rem;
+}
+.ticket-color{
+    width:100%;
+    height:5%;
+    border: none !important;
+}
+.ticket-id{
+    height: 20%;
+    width: 100%;
+    padding-left:15px;
+    padding-top:5px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color:#989393;
+    border: none !important;
+}
+.ticket-box{
+    height:75%;
+    width:100%;
+    outline:none;
+    overflow-y: auto;
+    padding-left:10px;
+    font-size:15px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none !important;
+}
+/* .active-modal-filter{
+    border: 5px solid red;
+    opacity: 1;
+} */
+.active-modal-filter{
+    border: 3px solid red;
+    opacity: 1 !important;
+}
+@media(max-width: 768px){
+.ticket{
+    margin-left:10px;
+    margin-right:10px;
+}
+.add{
+    font-size: 4.2rem;
+}
+.delete{
+    font-size: 3.6rem;
+}
+.filter-container,.action-container{
+    margin-top:1.7vh;
+}
+.filter-container{
+    width: 18rem;
+}
+.action-conatiner{
+    width: 10rem;
+}
+}
+
+@media(max-width: 600px){
+    .filter-container,.action-container{
+        height: 64%;
+        margin-top: 2.2vh;
+        margin-left: 2.3rem;
+    }
+    .modal-container{
+        height:14rem;
+        width:23rem;
+        top: calc((100vh - 14rem) / 2);
+        left: calc((100vw - 23rem) / 2);
+    }
+    .add{
+        font-size: 3.2rem;
+    }
+    .delete{
+        font-size: 2.8rem;
+    } 
+}
